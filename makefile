@@ -20,3 +20,6 @@ publish:
 	npm publish --dry-run
 
 .PHONY: test
+
+brain-games: 
+	node bin/brain-games.js
