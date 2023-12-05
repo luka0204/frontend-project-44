@@ -29,6 +29,7 @@
   "homepage": "https://github.com/hexlet-boilerplates/nodejs-package#readme",
   "dependencies": {
     "debug": "^4.3.4",
+    "gradle": "^1.2.4",
     "lodash": "^4.17.21",
     "readline-sync": "^1.4.10"
   },
