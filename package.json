@@ -4,8 +4,7 @@
   "description": "Node.js boilerplate package",
   "bin": {
     "brain-games": "bin/brain-games.js",
-    "brain-even": "bin/brain-even.js",
-    "nodejs-package": "bin/nodejs-package.js"
+    "brain-even": "bin/brain-even.js"
   },
   "simple-git-hooks": {
     "pre-push": "make lint"

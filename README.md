@@ -2,3 +2,5 @@
 [![Actions Status](https://github.com/luka0204/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/luka0204/frontend-project-44/actions)
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/e9c5015d94bd1d2998f2/maintainability)](https://codeclimate.com/github/luka0204/frontend-project-44/maintainability)
+
+Task 4 asciinema: https://asciinema.org/a/BF8cDMI67IC62WOrs8uhgwAXg

@@ -1,23 +1,25 @@
 import readlineSync from 'readline-sync';
-
-// eslint-disable-next-line import/prefer-default-export
 import
+// eslint-disable-next-line import/no-useless-path-segments
 { name } from '../src/cli.js';
 
-console.log(name);
-
 console.log('Welcome to the Brain Games!');
-
+console.log('Answer "yes" if the number is even, otherwise answer "no".');
+let point = 0;
 for (let i = 0; i <= 2; i += 1) {
   const rNum = Math.floor(Math.random() * 10);
-  console.log(rNum);
-  const question = readlineSync.question('Answer "yes" if the number is even, otherwise answer "no".');
-
-  // eslint-disable-next-line eqeqeq
-  if ((rNum % 2 == 0 || question == 'yes') && (rNum % 2 != 0 || question == 'no')) {
+  console.log(`Question: ${rNum}`);
+  const question = readlineSync.question('Your answer: ');
+  // console.log(`Your answer: ${question}`);
+  if ((rNum % 2 === 0 && question.toLowerCase() === 'yes') || (rNum % 2 !== 0 && question.toLowerCase() === 'no')) {
     console.log('Correct!');
-  // eslint-disable-next-line no-dupe-else-if, eqeqeq
-  } else if ((rNum % 2 != 0 || question == 'no') && (rNum % 2 == 0 || question == 'yes')) {
-    console.log('Incorrect');
+    point += 1;
+  } else {
+    console.log("yes' is wrong answer ;(. Correct answer was 'no'.");
+    console.log(`Let's try again, ${name}!`);
+    break;
+  }
+  if (point === 3) {
+    console.log(`Congratulations, ${name}!`);
   }
 }
