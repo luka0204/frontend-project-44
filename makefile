@@ -22,8 +22,6 @@ lint-fix:
 publish:
 	npm publish --dry-run
 
-.PHONY: test
-
 brain-games: 
 	node bin/brain-games.js
 
@@ -33,3 +31,5 @@ brain-even:
 brain-calc:
 	node bin/brain-calc.js
 			
+brain-gcd:
+	node bin/brain-gcd.js
