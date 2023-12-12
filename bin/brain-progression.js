@@ -1,6 +1,6 @@
-import readlineSync from 'readline-sync';
-import
-{ name } from '../src/cli.js';
+// import readlineSync from 'readline-sync';
+// import
+// { name } from '../src/cli.js';
 
 const randomNumberGen = (min, max) => Math.floor(Math.random() * (max - min)) + min;
 const rNum2 = randomNumberGen(1, 9);
