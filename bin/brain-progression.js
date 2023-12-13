@@ -21,7 +21,7 @@ for (let i = 0; i <= 2; i += 1) {
   const missingNumber = slicedArray[randomNumInArray1];
   const indexNum = slicedArray.indexOf(missingNumber);
   slicedArray[indexNum] = '..';
-  console.log(`Question: ${slicedArray}`);
+  console.log(`Question: ${slicedArray.join(' ')}`);
   let question = readlineSync.question('Your answer: ');
   question = Number(question);
   if (question === missingNumber) {
