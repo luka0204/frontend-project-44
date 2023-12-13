@@ -19,7 +19,6 @@ for (let i = 0; i <= 2; i += 1) {
   const slicedArray = randomArray.slice(lengthMin, lengthMax);
   const randomNumInArray1 = (slicedArray.length - rNum3);
   const missingNumber = slicedArray[randomNumInArray1];
-  console.log(`это ответ чтобы самому не считать = ${missingNumber}`);
   const indexNum = slicedArray.indexOf(missingNumber);
   slicedArray[indexNum] = '...';
   console.log(`Question: ${slicedArray}`);

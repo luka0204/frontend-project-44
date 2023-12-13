@@ -8,8 +8,9 @@ console.log('Find the greatest common divisor of given numbers.');
 let point = 0;
 
 for (let i = 0; i <= 2; i += 1) {
-  const rNum1 = Math.floor(Math.random() * 100);
-  const rNum2 = Math.floor(Math.random() * 100);
+  const randomNumberGen = (min, max) => Math.floor(Math.random() * (max - min)) + min;
+  const rNum1 = randomNumberGen(1, 100);
+  const rNum2 = randomNumberGen(1, 100);
   let answer = 0;
   let hcf;
   // eslint-disable-next-line no-plusplus
