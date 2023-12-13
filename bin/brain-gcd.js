@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 import
 // eslint-disable-next-line import/no-useless-path-segments

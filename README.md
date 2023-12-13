@@ -10,3 +10,5 @@ Task 6 asciinema https://asciinema.org/a/q93jmP7MIfux2LQKrEuJv7Pys
 Task 7 aciinema https://asciinema.org/a/HiVEpofJbmqyI9gUJkuG51LOo
 
 Task 8 asciinema https://asciinema.org/a/DvLjHFMC9pgqMvmvRPHBy9weV
+
+Task 9 asciinema https://asciinema.org/a/ut51LkC9MVoQ4UIDzWoiPv4lo
