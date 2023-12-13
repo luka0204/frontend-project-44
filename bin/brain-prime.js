@@ -6,6 +6,7 @@ import
 
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
 
+// eslint-disable-next-line consistent-return
 function primeCheck(number) {
   let isPrime = true;
   if (number > 1) {
