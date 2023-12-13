@@ -20,7 +20,7 @@ for (let i = 0; i <= 2; i += 1) {
   const randomNumInArray1 = (slicedArray.length - rNum3);
   const missingNumber = slicedArray[randomNumInArray1];
   const indexNum = slicedArray.indexOf(missingNumber);
-  slicedArray[indexNum] = '...';
+  slicedArray[indexNum] = '..';
   console.log(`Question: ${slicedArray}`);
   let question = readlineSync.question('Your answer: ');
   question = Number(question);
