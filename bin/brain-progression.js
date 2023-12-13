@@ -29,6 +29,7 @@ for (let i = 0; i <= 2; i += 1) {
     point += 1;
   } else {
     console.log(`'${question}' is wrong answer ;(. Correct answer was '${missingNumber}'.`);
+    console.log(`Let's try again, ${name}!`);
     break;
   }
   if (point === 3) {
