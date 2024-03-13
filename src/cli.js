@@ -5,7 +5,7 @@ console.log('Welcome to the Brain Games!');
 export const name = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
 
-export default function questionModule (answer, correctAnswer) {
+export function questionModule (answer, correctAnswer) {
         console.log(`Question: ${answer}`);
     const question = readlineSync.question('Your answer: ');
     if(question === correctAnswer) {
