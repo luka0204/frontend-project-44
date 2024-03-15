@@ -2,7 +2,6 @@ import readlineSync from 'readline-sync';
 console.log('Welcome to the Brain Games!');
 export const name = readlineSync.question('May I have your name? ');
 console.log(`Hello, ${name}!`);
-
 export function questionModule (answer, correctAnswer,numOrStr = 'str') {
         console.log(`Question: ${answer}`);
         if (numOrStr === 'num'){
@@ -27,10 +26,22 @@ export function questionModule (answer, correctAnswer,numOrStr = 'str') {
     }
 }
 }
+export function roundGen(game){
+  let point = 0;
+  for (let i = 0; i <= 2; i += 1) {
+if (game() == true){
+point +=1
+} else {
+  break;
+}
+if (point === 3){
+  console.log(`Congratulations, ${name}!`);
+}
+}
+}
+
 export function brainEven(){
     console.log('Answer "yes" if the number is even, otherwise answer "no".');
-let point = 0
-for (let i = 0; i <= 2; i += 1){
   function everOrOdd(num){
     if (rNum % 2 === 0){
       return 'yes';
@@ -40,32 +51,20 @@ for (let i = 0; i <= 2; i += 1){
     }
 const rNum = Math.floor(Math.random() * 10);
 const answer = questionModule(rNum,everOrOdd(rNum));
-if (answer === true){
-  point += 1;
-} else {
-  break;
-}
-  }
-  if (point === 3) {
-    console.log(`Congratulations, ${name}!`);
-  }
+return answer;
 }
 
 export function brainCalc(){
     function randomIntFromInterval(min, max) {
         return Math.floor(Math.random() * (max - min + 1) + min);
       }
-      
       console.log('What is the result of the expression?');
       const sign = ['+', '-', '*'];
       const rndInt = randomIntFromInterval(0, 2);
-      let point = 0;
-      for (let i = 0; i <= 2; i += 1) {
         const rNum1 = Math.floor(Math.random() * 10);
         const rNum2 = Math.floor(Math.random() * 10);
         let actualAnswer = 0;
         let expression = ''
-      
         switch (sign[rndInt]) {
           case '+':
             expression = (`Question: ${rNum1} + ${rNum2} = `);
@@ -80,17 +79,11 @@ export function brainCalc(){
             actualAnswer = (rNum1 * rNum2);
             break;
         }
-      const answer = questionModule(expression,actualAnswer,'num') 
-      if (answer === true){
-        point += 1;
-      } else {
-        break;
-      }
-        }
-        if (point === 3) {
-          console.log(`Congratulations, ${name}!`);
-      }
+      const answer = questionModule(expression,actualAnswer,'num')
+      return answer;
+
 }
+
 
 export function brainGcd(){
   console.log('Find the greatest common divisor of given numbers.');

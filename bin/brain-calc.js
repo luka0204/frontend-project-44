@@ -1,2 +1,2 @@
-import {name, questionModule, brainCalc} from '../src/cli.js';
-brainCalc();
+import {name, questionModule, brainCalc, roundGen} from '../src/cli.js';
+roundGen(brainCalc)
