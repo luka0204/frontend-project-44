@@ -1,2 +1,4 @@
-import { name,questionModule,brainGcd} from '../src/cli.js';
-brainGcd();
+import { brainGcd, roundGen } from '../src/cli.js'; 
+
+console.log('Find the greatest common divisor of given numbers.');
+roundGen(brainGcd);
