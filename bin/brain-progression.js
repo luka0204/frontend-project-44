@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import { roundGen, brainProgression } from '../src/cli.js';
+import { roundGen } from '../src/cli.js';
+import { brainProgression } from '../src/games/brain-progression-logic.js';
 
 roundGen(brainProgression);
